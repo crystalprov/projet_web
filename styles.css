@@ -154,6 +154,10 @@ nav > a {
     color: #5E548E; 
 }
 
+.justified {
+    text-align: justify;
+}
+
 #chat-input-div {
     height: 40px;
     width: 100%;
@@ -240,11 +244,37 @@ nav > a {
 
 #meeting-description-div {
     padding-left: 20px;
+    padding-right: 20px;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     overflow-wrap: anywhere;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#meeting-description-div table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#meeting-description-div th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+#meeting-description-div th {
+    background-color: #f4f4f4;
+}
+
+#meeting-description-div td.available {
+    background-color: #c8e6c9; /* Light green for availability */
+}
+
+#meeting-description-div td.unavailable {
+    background-color: #ffcdd2; /* Light red for unavailability */
 }
 
 #form-div {
@@ -321,6 +351,10 @@ nav > a {
         align-items: start;
     }
 
+    #meeting-description-div {
+        overflow: scroll;
+    }
+
     #call-div {
         width: 70%;
         height: 100%;
@@ -329,6 +363,7 @@ nav > a {
     #chat-div {
         width: 30%;
         height: 100%;
+        margin-left: 10px;
     }
 
     #form-div {
