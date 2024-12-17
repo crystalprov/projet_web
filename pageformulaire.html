@@ -27,15 +27,15 @@
 
                 <h2 class="centered-h2-form">Get Started</h2>
                 
-                <form method="post" action="">
+                <form id="form" method="post" action="">
                     <fieldset class="color-fieldset">
                         <legend>Your information</legend>
 
                         <label for="fname">First name:</label><br>
-                            <input type="text" id="fname" name="fname" required><br>
+                            <input type="text" id="fname" name="fname"><br>
 
                         <label for="lname">Last name:</label><br>
-                            <input type="text" id="lname" name="lname" required><br>
+                            <input type="text" id="lname" name="lname"><br>
 
                         <fieldset>
                             <legend>Gender:</legend>
@@ -58,10 +58,10 @@
                         </fieldset>
 
                         <label for="email">Email:</label><br>
-                            <input type="text" id="email" name="email" required><br>
+                            <input type="text" id="email" name="email"><br>
 
-                        <label for="phone">Phone number:</label><br>
-                            <input type="text" id="phone" name="email" required><br>
+                        <label for="phone">Phone number:</label required><br>
+                            <input type="text" id="phone" name="email"><br>
 
                         <label for="more">Comments</label><br>
                             <textarea id="details" name="details"></textarea>
@@ -85,17 +85,33 @@
             <div class="form_page_rel">
                 <div class="benefits-and-offers">
                     <h2>Sign Up Now To Get Special Offers </h2>
-                    <ul>
+                    <ul class="no-bullets">
 
                         <li>Enjoy 7 days of free coaching to discover our platform.</li> <br>
-
+                        
                         <li>Book your first session with a coach for free!</li> <br>
 
                         <li>Get 20% off your first month.</li> <br>
 
-                        <li>Access premium tools, webinars, and training materials.</li> <br>
+                        <li>
+                            <details>
+                                <summary>
+                                    Access premium tools, webinars, and training materials.
+                                </summary>
+                                <p class="summary-details">One-on-One Sessions: Personalized mentoring sessions to address specific
+                                challenges or questions.</p>
+                            </details>
+                        </li> <br>
 
-                        <li>Interact with our mentors and connect with our supportive community.</li>
+                        <li>
+                            <details>
+                                <summary>
+                                    Interact with our mentors and connect with our supportive community.
+                                </summary>
+                                <p class="summary-details">Project Feedback: Detailed critiques on your projects with actionable tips for 
+                                improvement.</p>
+                            </details>
+                        </li>
                 
                     </ul>
                 </div>
@@ -103,6 +119,42 @@
 
         </main>
     </div>
+
+    <script>
+
+        // Validation form
+
+        let fName = document.getElementById("fname");
+        let lName = document.getElementById("lname");
+        let email = document.getElementById("email");
+        let button = document.getElementById("button-form");
+        let form = document.getElementById("form");
+
+        form.addEventListener("submit", (event) => {
+            event.preventDefault();    
+
+            let errors = [];
+
+            if (fName.value.trim() === "") {
+                errors.push("Please fill out the 'First name' field.");
+            }
+            if (lName.value.trim() === "") {
+                errors.push("Please fill out the 'Last name' field.");
+            }
+            if (email.value.trim() === "") {
+                errors.push("Please fill out the 'Email' field.");
+            }
+
+            if (errors.length > 0) {
+                alert(errors.join("\n")); 
+
+            } else {
+                alert("Thank you " + fName.value + "! We will reach out to you soon.");
+                form.reset(); 
+
+            }});
+
+    </script>
 
 </body>
 </html>

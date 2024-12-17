@@ -136,6 +136,22 @@ nav > a {
     margin-bottom: 10%;
 }
 
+.no-bullets {
+    list-style: none;
+}
+
+.summary-details {
+    font-size: smaller;
+    color: #F76C6C;
+}
+
+.benefits-and-offers li:hover {
+    transform: scale(1.1); 
+    font-size: 1em; 
+    transition: 0.3s ease;
+    color: #5E548E; 
+}
+
 #chat-input-div {
     height: 40px;
     width: 100%;
