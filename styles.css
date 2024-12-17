@@ -63,6 +63,18 @@ nav > a {
     padding: 15px;
     background-color: #F0F0F3; /* Fond clair pour la première div */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: scroll;
+}
+
+.centered-h2-form {
+    padding-top: 5%;
+    text-align: center;
+    font-family: 'Lucida Sans';
+}
+
+.color-fieldset {
+    background-color: #e1e1e1;
+  
 }
 
 .chat {
@@ -169,6 +181,8 @@ nav > a {
 
 #form-div {
     margin-bottom: 10px;
+    font-size: 120%;
+    
 }
 
 #form-main {
@@ -194,6 +208,23 @@ nav > a {
     padding: 10px; 
     font-size: 14px; 
 }
+
+.benefits-and-offers {
+    font-size: 120%;
+    font-family: 'Lucida Sans';
+    padding: 5%;
+      
+}
+
+.benefits-and-offers li {
+    margin: 5%;
+}
+
+.benefits-and-offers h2 {
+    text-align: center;
+    margin-bottom: 10%;
+}
+
 
 #button-form {
     margin: 2em;
