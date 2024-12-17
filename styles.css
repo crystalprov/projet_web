@@ -77,6 +77,25 @@ nav > a {
   
 }
 
+.color-fieldset fieldset {
+    border: none;
+    margin: 2%;
+}
+
+.benefits-and-offers {
+    font-size: 120%;
+    font-family: 'Lucida Sans';
+    padding: 5%;     
+}
+
+.benefits-and-offers li {
+    margin: 5%;
+}
+
+.benefits-and-offers h2 {
+    text-align: center;
+    margin-bottom: 10%;
+}
 .chat {
     background-color: white;
     margin-top: 5px;
@@ -99,6 +118,22 @@ nav > a {
 
 .message {
     margin-left: 20px;
+}
+
+.benefits-and-offers {
+    font-size: 120%;
+    font-family: 'Lucida Sans';
+    padding: 5%;
+      
+}
+
+.benefits-and-offers li {
+    margin: 5%;
+}
+
+.benefits-and-offers h2 {
+    text-align: center;
+    margin-bottom: 10%;
 }
 
 #chat-input-div {
@@ -222,22 +257,6 @@ nav > a {
     border-radius: 5px; 
     padding: 10px; 
     font-size: 14px; 
-}
-
-.benefits-and-offers {
-    font-size: 120%;
-    font-family: 'Lucida Sans';
-    padding: 5%;
-      
-}
-
-.benefits-and-offers li {
-    margin: 5%;
-}
-
-.benefits-and-offers h2 {
-    text-align: center;
-    margin-bottom: 10%;
 }
 
 #button-form {
