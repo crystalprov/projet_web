@@ -13,6 +13,7 @@ nav > ul {
 
 main {
     height: 100%;
+    width: 100%;
 }
 
 .primary-color {
@@ -32,4 +33,22 @@ main {
     flex-direction: column;
     height: 100%;
     width: 100%;
+}
+
+/* Medium Display */
+@media (min-width: 600px) {
+    nav > ul {
+        flex-direction: row;
+    }
+}
+
+/* Big Display */
+@media (min-width: 1100px) {
+    nav > ul {
+        flex-direction: column;
+    }
+
+    #nav-main-div {
+        flex-direction: row;
+    }
 }
