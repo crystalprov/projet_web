@@ -3,12 +3,20 @@ body, html {
     padding: 0;
     height: 100%;
     width: 100%;
+    color: #2D2D2D;
 }
 
-nav > ul {
+header {
+    display: flex;          
+    justify-content: center;
+    align-items: center;  
+    height: 100px; 
+    font-size: 36px;
+  }
+
+nav {
     display: flex;
     flex-direction: column;
-    margin: 0;
 }
 
 main {
@@ -16,16 +24,31 @@ main {
     width: 100%;
 }
 
+nav > a {
+    color: #F0F0F3;
+    padding: 10px;
+    align-items: center;
+    width: 100%;
+}
+
 .primary-color {
-    background-color: green;
+    background-color: #5E548E;
 }
 
 .secondary-color {
-    background-color: red;
+    background-color: #9F86C0;
 }
 
-.tertiary-color {
-    background-color: blue;
+.main-background-color {
+    background-color: #F0F0F3;
+}
+
+.action-color {
+    background-color: #F76C6C;
+}
+
+.accent {
+    background-color: #A8DADC;
 }
 
 #nav-main-div {
@@ -37,14 +60,14 @@ main {
 
 /* Medium Display */
 @media (min-width: 600px) {
-    nav > ul {
+    nav {
         flex-direction: row;
     }
 }
 
 /* Big Display */
 @media (min-width: 1100px) {
-    nav > ul {
+    nav {
         flex-direction: column;
     }
 
