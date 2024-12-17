@@ -76,6 +76,26 @@ nav > a {
   
 }
 
+.color-fieldset fieldset {
+    border: none;
+    margin: 2%;
+}
+
+.benefits-and-offers {
+    font-size: 120%;
+    font-family: 'Lucida Sans';
+    padding: 5%;     
+}
+
+.benefits-and-offers li {
+    margin: 5%;
+}
+
+.benefits-and-offers h2 {
+    text-align: center;
+    margin-bottom: 10%;
+}
+
 #form-div {
     margin-bottom: 10px;
     font-size: 120%;
@@ -105,23 +125,6 @@ nav > a {
     padding: 10px; 
     font-size: 14px; 
 }
-
-.benefits-and-offers {
-    font-size: 120%;
-    font-family: 'Lucida Sans';
-    padding: 5%;
-      
-}
-
-.benefits-and-offers li {
-    margin: 5%;
-}
-
-.benefits-and-offers h2 {
-    text-align: center;
-    margin-bottom: 10%;
-}
-
 
 #button-form {
     margin: 2em;

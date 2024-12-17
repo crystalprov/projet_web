@@ -8,7 +8,7 @@
 </head>
 <body>
     <header class="secondary-color">
-        <span>Titre</span>
+        <span>Join</span>
     </header>
 
     <div id="nav-main-div">
@@ -27,19 +27,55 @@
 
                 <h2 class="centered-h2-form">Get Started</h2>
                 
-                <form method="post" action="@">
+                <form method="post" action="">
                     <fieldset class="color-fieldset">
                         <legend>Your information</legend>
+
                         <label for="fname">First name:</label><br>
-                        <input type="text" id="fname" name="fname" required><br>
+                            <input type="text" id="fname" name="fname" required><br>
+
                         <label for="lname">Last name:</label><br>
-                        <input type="text" id="lname" name="lname" required><br>
+                            <input type="text" id="lname" name="lname" required><br>
+
+                        <fieldset>
+                            <legend>Gender:</legend>
+                                
+                            <label>
+                                <input type="radio" name="gender" value="male">
+                                Male
+                            </label><br>
+                            
+                            <label>
+                                <input type="radio" name="gender" value="female">
+                                 Female
+                            </label><br>
+                                
+                            <label>
+                                <input type="radio" name="gender" value="other">
+                                Other
+                            </label>
+                                
+                        </fieldset>
+
                         <label for="email">Email:</label><br>
-                        <input type="text" id="email" name="email" required><br>
+                            <input type="text" id="email" name="email" required><br>
+
                         <label for="phone">Phone number:</label><br>
-                        <input type="text" id="phone" name="email" required><br>
+                            <input type="text" id="phone" name="email" required><br>
+
                         <label for="more">Comments</label><br>
-                        <textarea id="details" name="details"></textarea>
+                            <textarea id="details" name="details"></textarea>
+
+                        <label>
+                            <input type="checkbox"  class="terms_and_conditions" name="agreement" checked required>
+                            I agree to the Terms and Conditions.
+                        </label><br>
+
+                        <label>
+                            <input type="checkbox"  class="terms_and_conditions" name="newsletter">
+                            I want to subscribe to the newsletter.
+                        </label><br>
+
                         <input type="submit" id="button-form" value="SIGN UP NOW">  
                     </fieldset>  
                 </form>
