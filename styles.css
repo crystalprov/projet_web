@@ -134,11 +134,17 @@ nav > a {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100%;
     align-items: center;
 }
 
-#meeting-main img {
+#meeting-div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+#meeting-div img {
     height: 100%;
     border-radius: 8px;
 }
@@ -177,6 +183,15 @@ nav > a {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
+}
+
+#meeting-description-div {
+    padding-left: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-wrap: anywhere;
 }
 
 #form-div {
@@ -225,7 +240,6 @@ nav > a {
     margin-bottom: 10%;
 }
 
-
 #button-form {
     margin: 2em;
     background-color: #F0F0F3;
@@ -264,7 +278,7 @@ nav > a {
         height: 150px;
     }
 
-    #meeting-main {
+    #meeting-div {
         display: flex;
         flex-direction: row;
         align-items: start;
@@ -272,10 +286,12 @@ nav > a {
 
     #call-div {
         width: 70%;
+        height: 100%;
     }
 
     #chat-div {
         width: 30%;
+        height: 100%;
     }
 
     #form-div {
@@ -295,17 +311,29 @@ nav > a {
         flex-direction: column;
     }
 
-    #host-div {
-        width: 300px;
-        height: 200px;
+    #meeting-main {
+        align-items: start;
     }
 
-    #call-div {
+    #meeting-div {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
         height: 70%;
     }
 
     #chat-div {
-        height: 100%;
+        width: 30%;
+        height: 140%;
+    }
+
+    #meeting-description-div {
+        width: 70%;
+    }
+
+    #host-div {
+        width: 300px;
+        height: 200px;
     }
 
     #nav-main-div {
