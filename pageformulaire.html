@@ -1,60 +1,57 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulaire</title>
+    <title>Index</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- En-tête de la page -->
-    <header>
-        <h1>Formulaire</h1>
+    <header class="secondary-color">
+        <span>Titre</span>
     </header>
 
-    <!-- Navigation /// a changer  -->
-    <nav>
-        <ul>
-            <li><a href="#section1">Section 1</a></li>
-            <li><a href="#section2">Section 2</a></li>
-            <li><a href="#section3">Section 3</a></li>
-        </ul>
-    </nav>
+    <div id="nav-main-div">
 
-    <!-- Contenu principal -->
-    <main class="form_page_rel">
+        <nav class="primary-color text-accent">
+            <a href="index.html">Acceuil</a>
+            <a href="about.html">À propos</a>
+            <a href="page1.html">page1</a>
+            <a href="page2.html">page2</a>
+            <a href="page3.html">page3</a>
+        </nav>
 
-        <div class="form_page_rel">
+        <main class="main-background-color form_page_rel">
 
-            <form method="post" action="@">
-                <label for="fname">First name:</label><br>
-                <input type="text" id="fname" name="fname" required><br>
-                <label for="lname">Last name:</label><br>
-                <input type="text" id="lname" name="lname" required><br>
-                <label for="email">Email:</label><br>
-                <input type="text" id="email" name="email" required><br>
-                <label for="phone">Phone number:</label><br>
-                <input type="text" id="phone" name="email" required><br>
-                <label for="more">How can we help?</label><br>
-                <input type="text" id="details" name="details" required><br>
-                <input type="submit" id="button-form" value="Register">    
-            </form>
+            <div class="form_page_rel">
 
-        </div>
+                <form method="post" action="@">
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname" required><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" required><br>
+                    <label for="email">Email:</label><br>
+                    <input type="text" id="email" name="email" required><br>
+                    <label for="phone">Phone number:</label><br>
+                    <input type="text" id="phone" name="email" required><br>
+                    <label for="more">How can we help?</label><br>
+                    <input type="text" id="details" name="details" required><br>
+                    <input type="submit" id="button-form" value="Register">    
+                </form>
+    
+            </div>
+    
+            <div class="form_page_rel">
+                <h2>Section 2</h2>
+                <p>J'essaye de mettre les deux div collée une a coté de lautre pis de les mettre
+                    de deux couleur différentes genre pis que ca fasse un beau form mais live c'est dégueu
+                    pis jsuis pas capable ya plein de inception de flexbox
+                </p>
+            </div>
 
-        <div class="form_page_rel">
-            <h2>Section 2</h2>
-            <p>J'essaye de mettre les deux div collée une a coté de lautre pis de les mettre
-                de deux couleur différentes genre pis que ca fasse un beau form mais live c'est dégueu
-                pis jsuis pas capable ya plein de inception de flexbox
-            </p>
-        </div>
+        </main>
 
-    </main>
+    </div>
 
-    <!-- Pied de page -->
-    <footer>
-        <p>&copy; 2024 - Coaching</p>
-    </footer>
 </body>
 </html>

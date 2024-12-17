@@ -26,6 +26,7 @@ nav {
 main {
     height: 100%;
     width: 100%;
+    margin: 10px;
 }
 
 nav > a {
@@ -60,21 +61,17 @@ nav > a {
     justify-content: center;
     align-items: center;
     flex-grow: 1;
-    border: none;
-    
-    
+    border: none;   
 }
 
 .form_page_rel {
     display: flex;
     flex-direction: row; /* Organise les enfants en ligne */
-   
     border: 3px solid #5E548E;
     padding: 1em;
     border-radius: 8px;
     background-color: #f0f0f3;
     max-width: 100%; 
-   
 }
 
 #nav-main-div {
@@ -100,8 +97,6 @@ nav > a {
 #button-form:hover {
     background-color: #F76C6C;
 }
-
-
 
 /* Medium Display */
 @media (min-width: 600px) {
