@@ -26,7 +26,7 @@ nav {
 main {
     height: 100%;
     width: 100%;
-    margin: 10px;
+    padding: 10px;
 }
 
 nav > a {
@@ -56,22 +56,24 @@ nav > a {
     background-color: #A8DADC;
 }
 
-.form_page_rel div {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-    border: none;   
+.form_page_rel {
+    flex: 1; /* Chaque bloc prend 50% de l'espace */
+    border: 2px solid #5E548E; /* Bordure pour délimiter les blocs */
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #F0F0F3; /* Fond clair pour la première div */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.form_page_rel {
+#form-div {
+    margin-bottom: 10px;
+}
+
+#form-main {
     display: flex;
-    flex-direction: row; /* Organise les enfants en ligne */
-    border: 3px solid #5E548E;
-    padding: 1em;
-    border-radius: 8px;
-    background-color: #f0f0f3;
-    max-width: 100%; 
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
 }
 
 #nav-main-div {
@@ -82,8 +84,13 @@ nav > a {
 }
 
 #details {
-    width: 50%;
-    height: 20%; /* Largeur relative à son conteneur */
+    width: 100%; 
+    height: 150px; 
+    resize: none; 
+    border: 1px solid #786690; 
+    border-radius: 5px; 
+    padding: 10px; 
+    font-size: 14px; 
 }
 
 #button-form {
@@ -101,6 +108,16 @@ nav > a {
 /* Medium Display */
 @media (min-width: 600px) {
     nav {
+        flex-direction: row;
+    }
+
+    #form-div {
+        margin-bottom: 0px;
+        margin-right: 10px;
+    }
+
+    #form-main {
+        display: flex;
         flex-direction: row;
     }
 }

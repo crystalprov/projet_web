@@ -21,10 +21,11 @@
             <a href="page3.html">page3</a>
         </nav>
 
-        <main class="main-background-color form_page_rel">
+        <main id="form-main" class="main-background-color">
 
-            <div class="form_page_rel">
+            <div id="form-div" class="form_page_rel">
 
+                <h2>Don't miss out!</h2>
                 <form method="post" action="@">
                     <label for="fname">First name:</label><br>
                     <input type="text" id="fname" name="fname" required><br>
@@ -34,8 +35,8 @@
                     <input type="text" id="email" name="email" required><br>
                     <label for="phone">Phone number:</label><br>
                     <input type="text" id="phone" name="email" required><br>
-                    <label for="more">How can we help?</label><br>
-                    <input type="text" id="details" name="details" required><br>
+                    <label for="more">Comments</label><br>
+                    <textarea id="details" name="details"></textarea>
                     <input type="submit" id="button-form" value="Register">    
                 </form>
     
@@ -50,7 +51,6 @@
             </div>
 
         </main>
-
     </div>
 
 </body>
