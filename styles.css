@@ -65,6 +65,86 @@ nav > a {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.chat {
+    background-color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    border-radius: 8px;
+    align-items: center;
+}
+
+.circle {
+    border-radius: 50%;
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+}
+
+.message {
+    margin-left: 20px;
+}
+
+#chat-input-div {
+    background-color: pink;
+    height: 40px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+}
+
+#chat-input-div > input {
+    width: 80%;
+    margin: 5px;
+}
+
+#chat-input-div > button {
+    width: 20%;
+    margin: 5px;
+}
+
+#chat-list-div {
+    background-color: lightblue;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+#meeting-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+#call-div {
+    background-color: brown;
+    width: 100%;
+    height: 50%;
+    border-radius: 8px;
+}
+
+#chat-div {
+    background-color: orange;
+    width: 90%;
+    height: 50%;
+    padding: 10px;
+    border: 2px solid #5E548E;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
 #form-div {
     margin-bottom: 10px;
 }
@@ -105,10 +185,28 @@ nav > a {
     background-color: #F76C6C;
 }
 
+#button-chat:hover {
+    background-color: #F76C6C;
+}
+
 /* Medium Display */
 @media (min-width: 600px) {
     nav {
         flex-direction: row;
+    }
+
+    #meeting-main {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+    }
+
+    #call-div {
+        width: 70%;
+    }
+
+    #chat-div {
+        width: 30%;
     }
 
     #form-div {
@@ -126,6 +224,14 @@ nav > a {
 @media (min-width: 1100px) {
     nav {
         flex-direction: column;
+    }
+
+    #call-div {
+        height: 70%;
+    }
+
+    #chat-div {
+        height: 100%;
     }
 
     #nav-main-div {
