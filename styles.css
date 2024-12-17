@@ -63,6 +63,7 @@ nav > a {
     padding: 15px;
     background-color: #F0F0F3; /* Fond clair pour la première div */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: auto;
 }
 
 .centered-h2-form {
@@ -94,6 +95,107 @@ nav > a {
 .benefits-and-offers h2 {
     text-align: center;
     margin-bottom: 10%;
+}
+.chat {
+    background-color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    border-radius: 8px;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.circle {
+    border-radius: 50%;
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+}
+
+.message {
+    margin-left: 20px;
+}
+
+#chat-input-div {
+    height: 40px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#chat-input-div > input {
+    width: 80%;
+    margin: 5px;
+}
+
+#chat-input-div > button {
+    width: 20%;
+    margin: 5px;
+}
+
+#chat-list-div {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+#meeting-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+#meeting-main img {
+    height: 100%;
+    border-radius: 8px;
+}
+
+#call-div {
+    background-color: rgb(72, 72, 72);
+    width: 100%;
+    height: 50%;
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#host-div {
+    position: absolute; 
+    bottom: 0;       
+    right: 0;    
+    background-color: black;
+    color: white;
+    margin: 10px;
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+#chat-div {
+    width: 90%;
+    height: 50%;
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
 }
 
 #form-div {
@@ -138,10 +240,44 @@ nav > a {
     background-color: #F76C6C;
 }
 
+#button-chat:hover {
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 1);
+    cursor: pointer;
+}
+
+#button-chat {
+    font-size: 20px;
+    padding-top: 2px;
+    color: white;
+}
+
 /* Medium Display */
 @media (min-width: 600px) {
     nav {
         flex-direction: row;
+    }
+
+    .form_page_rel {
+        overflow: scroll;
+    }
+
+    #host-div {
+        width: 150px;
+        height: 150px;
+    }
+
+    #meeting-main {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+    }
+
+    #call-div {
+        width: 70%;
+    }
+
+    #chat-div {
+        width: 30%;
     }
 
     #form-div {
@@ -159,6 +295,19 @@ nav > a {
 @media (min-width: 1100px) {
     nav {
         flex-direction: column;
+    }
+
+    #host-div {
+        width: 300px;
+        height: 200px;
+    }
+
+    #call-div {
+        height: 70%;
+    }
+
+    #chat-div {
+        height: 100%;
     }
 
     #nav-main-div {
