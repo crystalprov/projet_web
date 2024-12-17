@@ -56,22 +56,33 @@ nav > a {
     background-color: #A8DADC;
 }
 
-.form_page_rel div {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-    border: none;   
+.side-to-side {
+    display: flex; 
+    justify-content: space-between; /* Espace entre les deux blocs */
+    padding: 20px; /* Ajoute de l'espace autour */
+    gap: 20px; /* Espace entre les deux div */
+}
+
+.form_page_rel_container{ 
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    gap: 20px; /* Espace entre les deux blocs */   
 }
 
 .form_page_rel {
-    display: flex;
-    flex-direction: row; /* Organise les enfants en ligne */
-    border: 3px solid #5E548E;
-    padding: 1em;
+    flex: 1; /* Chaque bloc prend 50% de l'espace */
+    padding: 20px;
+    border: 2px solid #5E548E; /* Bordure pour délimiter les blocs */
     border-radius: 8px;
-    background-color: #f0f0f3;
-    max-width: 100%; 
+    background-color: #F0F0F3; /* Fond clair pour la première div */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.form_page_rel:nth-child(2) {
+    background-color: #786690; /* Couleur différente pour contraste (orange clair) */
+    
 }
 
 #nav-main-div {
@@ -82,8 +93,13 @@ nav > a {
 }
 
 #details {
-    width: 50%;
-    height: 20%; /* Largeur relative à son conteneur */
+    width: 100%; 
+    height: 150px; 
+    resize: none; 
+    border: 1px solid #786690; 
+    border-radius: 5px; 
+    padding: 10px; 
+    font-size: 14px; 
 }
 
 #button-form {
@@ -102,6 +118,9 @@ nav > a {
 @media (min-width: 600px) {
     nav {
         flex-direction: row;
+    }
+    .form_page_rel {
+        flex-direction: column;
     }
 }
 

@@ -20,37 +20,37 @@
             <a href="page2.html">page2</a>
             <a href="page3.html">page3</a>
         </nav>
-
-        <main class="main-background-color form_page_rel">
-
-            <div class="form_page_rel">
-
-                <form method="post" action="@">
-                    <label for="fname">First name:</label><br>
-                    <input type="text" id="fname" name="fname" required><br>
-                    <label for="lname">Last name:</label><br>
-                    <input type="text" id="lname" name="lname" required><br>
-                    <label for="email">Email:</label><br>
-                    <input type="text" id="email" name="email" required><br>
-                    <label for="phone">Phone number:</label><br>
-                    <input type="text" id="phone" name="email" required><br>
-                    <label for="more">How can we help?</label><br>
-                    <input type="text" id="details" name="details" required><br>
-                    <input type="submit" id="button-form" value="Register">    
-                </form>
-    
-            </div>
-    
-            <div class="form_page_rel">
-                <h2>Section 2</h2>
-                <p>J'essaye de mettre les deux div collée une a coté de lautre pis de les mettre
-                    de deux couleur différentes genre pis que ca fasse un beau form mais live c'est dégueu
-                    pis jsuis pas capable ya plein de inception de flexbox
-                </p>
-            </div>
-
-        </main>
-
+        <div>
+            <main class="main-background-color form_page_rel">
+                <div class="form_page_rel_container">
+                    <div class="form_page_rel">
+                        <h2>Don't miss out!</h2>
+                        <form method="post" action="@">
+                            <label for="fname">First name:</label><br>
+                            <input type="text" id="fname" name="fname" required><br>
+                            <label for="lname">Last name:</label><br>
+                            <input type="text" id="lname" name="lname" required><br>
+                            <label for="email">Email:</label><br>
+                            <input type="text" id="email" name="email" required><br>
+                            <label for="phone">Phone number:</label><br>
+                            <input type="text" id="phone" name="email" required><br>
+                            <label for="more">Comments</label><br>
+                            <textarea id="details" name="details"></textarea>
+                            <input type="submit" id="button-form" value="Register">    
+                        </form>
+            
+                    </div>
+            
+                    <div class="form_page_rel_child">
+                        <h2>Section 2</h2>
+                        <p>J'essaye de mettre les deux div collée une a coté de lautre pis de les mettre
+                            de deux couleur différentes genre pis que ca fasse un beau form mais live c'est dégueu
+                            pis jsuis pas capable ya plein de inception de flexbox
+                        </p>
+                    </div>
+                </div>
+            </main>
+        </div>
     </div>
 
 </body>
