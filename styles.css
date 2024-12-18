@@ -47,6 +47,13 @@ nav > a {
     flex-direction: column;
 }
 
+.about-text {
+display: flex; 
+flex-direction: row; 
+flex-wrap: wrap; 
+justify-content: space-evenly;
+}
+
 .primary-color {
     background-color: #5E548E;
 }
