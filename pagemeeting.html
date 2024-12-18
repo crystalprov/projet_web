@@ -33,21 +33,21 @@
     
                 <div id="chat-div" class="accent">
                     <div id="chat-input-div" class="primary-color">
-                        <input type="text" placeholder="Enter chat here!">
-                        <span id="button-chat">&#11162</span>
+                        <input type="text" id="chat-input" placeholder="Enter chat here!">
+                        <span id="button-chat" onclick="addChat()">&#11162;</span>
                     </div>
-    
+                
                     <div id="chat-list-div">
                         <div class="chat">
                             <div class="circle">
-                                <img src="images/cutie_user.jpg" alt="User A exemple picture">
+                                <img src="images/cutie_user.jpg" alt="User A example picture">
                             </div>
                             <span class="message">comment1</span>
                         </div>
-    
+                
                         <div class="chat">
                             <div class="circle">
-                                <img src="images/frog_user.jpg" alt="User B exemple picture">
+                                <img src="images/frog_user.jpg" alt="User B example picture">
                             </div>
                             <span class="message">comment2</span>
                         </div>
@@ -158,6 +158,32 @@
         </main>
 
     </div>
+
+    <script>
+        function addChat() {
+            // Get the input field and its value
+            const inputField = document.getElementById('chat-input');
+            const inputValue = inputField.value.trim();
+    
+            // Check if the input is not empty
+            if (inputValue !== "") {
+                // Find an existing .chat div to clone
+                const chatListDiv = document.getElementById('chat-list-div');
+                const existingChat = chatListDiv.querySelector('.chat');
+                const newChat = existingChat.cloneNode(true);
+    
+                // Replace the message content with the input value
+                const messageSpan = newChat.querySelector('.message');
+                messageSpan.textContent = inputValue;
+    
+                // Append the new chat to the chat list
+                chatListDiv.appendChild(newChat);
+    
+                // Clear the input field
+                inputField.value = "";
+            }
+        }
+    </script>
 
 </body>
 </html>
