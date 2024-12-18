@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="secondary-color">
+        <span>Resources</span>
+    </header>
+
+    <div id="nav-main-div">
+
+        <nav class="primary-color text-accent">
+            <a href="pagedesign.html">Our Design</a>
+            <a href="about.html">About</a>
+            <a href="pageformulaire.html">Sign Up</a>
+            <a href="pageressources.html">Resources</a>
+            <a href="pagemeeting.html">Meeting</a>
+        </nav>
+
+        <main class="main-background-color">
+
+            <div>
+                <p class="justified">
+                    Welcome to our Resources Page! Here you'll find a curated 
+                    collection of helpful links and materials across multiple 
+                    subjects, including Math, French, English, Physics, and 
+                    Chemistry. Whether you're looking for study guides, 
+                    practice exercises, or tips to deepen your understanding, 
+                    these resources are here to support your learning journey 
+                    and help you achieve academic success.
+                </p>
+            </div>
+
+            <div>
+                <p>Select a subject from the dropdown menu to filter the resources.</p>
+                <label for="subject-filter">Choose a subject:</label>
+                <select id="subject-filter" onchange="filterResources()">
+                    <option value="all">All Subjects</option>
+                    <option value="math">Math</option>
+                    <option value="french">French</option>
+                    <option value="english">English</option>
+                    <option value="physics">Physics</option>
+                    <option value="chemistry">Chemistry</option>
+                </select>
+            </div>
+
+            <div id="resources-div">
+                <div class="resource-group" id="math">
+                    <h2>Math Resources</h2>
+                    <div class="resources">
+                        <div class="resource">
+                            <img src="images/algebra.webp" alt="Algebra Basics">
+                            <div class="resource-description">
+                                <h3>Algebra Basics</h3>
+                                <span>Learn the fundamentals of algebra, from variables to equations.</span>
+                                <a href="https://example.com/math1" target="_blank">Visit Resource</a>
+                            </div>
+                        </div>
+                        <div class="resource">
+                            <img src="images/Calculus.jpg" alt="Calculus Explained">
+                            <div class="resource-description">
+                                <h3>Calculus Explained</h3>
+                                <span>A comprehensive guide to derivatives, integrals, and their applications.</span>
+                                <a href="https://example.com/math2" target="_blank">Visit Resource</a>
+                            </div>
+                        </div>
+                        <div class="resource">
+                            <img src="images/geometry.jpg" alt="Geometry Essentials">
+                            <div class="resource-description">
+                                <h3>Geometry Essentials</h3>
+                                <span>Explore shapes, angles, and proofs in this engaging resource.</span>
+                                <a href="https://example.com/math3" target="_blank">Visit Resource</a>
+                            </div>
+                        </div>
+                        <div class="resource">
+                            <img src="images/Statistics.webp" alt="Statistics for Beginners">
+                            <div class="resource-description">
+                                <h3>Statistics for Beginners</h3>
+                                <span>Understand the basics of probability, data analysis, and statistical concepts.</span>
+                                <a href="https://example.com/math4" target="_blank">Visit Resource</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="resource-group" id="french">
+                    <h2>French Resources</h2>
+                    <div class="resources">
+                        <div class="resource">
+                            <img src="images/Grammar.jpg" alt="French Grammar">
+                            <div class="resource-description">
+                                <h3>French Grammar</h3>
+                                <span>Master verb conjugations, sentence structure, and tenses.</span>
+                                <a href="https://example.com/french1" target="_blank">Visit Resource</a>
+                            </div>
+                        </div>
+                        <div class="resource">
+                            <img src="images/Vocabulary.webp" alt="French Vocabulary">
+                            <div class="resource-description">
+                                <h3>French Vocabulary</h3>
+                                <span>Expand your vocabulary with essential French words and phrases.</span>
+                                <a href="https://example.com/french2" target="_blank">Visit Resource</a>
+                            </div>
+                        </div>
+                        <div class="resource">
+                            <img src="images/Culture and Media.avif" alt="French Culture and Media">
+                            <div class="resource-description">
+                                <h3>French Culture and Media</h3>
+                                <span>Immerse yourself in French culture through articles and videos.</span>
+                                <a href="https://example.com/french3" target="_blank">Visit Resource</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="resource-group" id="english">
+                    <h2>English Resources</h2>
+
+                    <div class="resources">
+                        <div class="resource">
+                            <img src="images/Creative Writing Tips.webp" alt="Creative Writing Tips">
+                            <div class="resource-description">
+                                <h3>Creative Writing Tips</h3>
+                                <span>Enhance your storytelling and writing skills with expert advice.</span>
+                                <a href="https://example.com/english1" target="_blank">Visit Resource</a>
+                            </div>
+                        </div>
+                        <div class="resource">
+                            <img src="images/Grammar.jpg" alt="English Grammar 101">
+                            <div class="resource-description">
+                                <h3>English Grammar 101</h3>
+                                <span>A beginner's guide to English grammar rules and examples.</span>
+                                <a href="https://example.com/english2" target="_blank">Visit Resource</a>
+                            </div>
+                        </div>
+                        <div class="resource">
+                            <img src="images/Reading.jpg" alt="Reading Comprehension">
+                            <div class="resource-description">
+                                <h3>Reading Comprehension</h3>
+                                <span>Practice your reading skills with engaging texts and exercises.</span>
+                                <a href="https://example.com/english3" target="_blank">Visit Resource</a>
+                            </div>
+                        </div>
+                        <div class="resource">
+                            <img src="images/Writing for Essays.png" alt="Writing for Essays">
+                            <div class="resource-description">
+                                <h3>Writing for Essays</h3>
+                                <span>Learn how to structure and write essays with clear arguments and evidence.</span>
+                                <a href="https://example.com/english4" target="_blank">Visit Resource</a>
+                            </div>
+                        </div>
+                        <div class="resource">
+                            <img src="images/Literary Devices.jpg" alt="Literary Devices">
+                            <div class="resource-description">
+                                <h3>Literary Devices</h3>
+                                <span>Discover how to use literary devices to enhance your writing and analysis.</span>
+                                <a href="https://example.com/english5" target="_blank">Visit Resource</a>
+                            </div>
+                        </div>
+                        <div class="resource">
+                            <img src="images/Poetry Fundamentals.png" alt="Poetry Fundamentals">
+                            <div class="resource-description">
+                                <h3>Poetry Fundamentals</h3>
+                                <span>Explore the basics of poetry, from rhyme schemes to meter and symbolism.</span>
+                                <a href="https://example.com/english6" target="_blank">Visit Resource</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="resource-group" id="physics">
+                    <h2>Physics Resources</h2>
+                    <div class="resources">
+                        <div class="resource">
+                            <img src="images/Mechanics.png" alt="Mechanics Made Easy">
+                            <div class="resource-description">
+                                <h3>Mechanics Made Easy</h3>
+                                <span>Understand the laws of motion and forces in everyday life.</span>
+                                <a href="https://example.com/physics1" target="_blank">Visit Resource</a>
+                            </div>
+                        </div>
+                        <div class="resource">
+                            <img src="images/Electricity.jpg" alt="Electricity Basics">
+                            <div class="resource-description">
+                                <h3>Electricity Basics</h3>
+                                <span>Explore the principles of electricity and circuits in this beginner's guide.</span>
+                                <a href="https://example.com/physics2" target="_blank">Visit Resource</a>
+                            </div>
+                        </div>
+                        <div class="resource">
+                            <img src="images/Quantum Physics.jpg" alt="Quantum Physics Intro">
+                            <div class="resource-description">
+                                <h3>Quantum Physics Intro</h3>
+                                <span>Discover the basics of quantum mechanics and its applications.</span>
+                                <a href="https://example.com/physics3" target="_blank">Visit Resource</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="resource-group" id="chemistry">
+                    <h2>Chemistry Resources</h2>
+                    <div class="resources">
+                        <div class="resource">
+                            <img src="images/Periodic Table Guide.avif" alt="Periodic Table Guide">
+                            <div class="resource-description">
+                                <h3>Periodic Table Guide</h3>
+                                <span>Learn how to read and use the periodic table effectively.</span>
+                                <a href="https://example.com/chemistry1" target="_blank">Visit Resource</a>
+                            </div>
+                        </div>
+                        <div class="resource">
+                            <img src="images/Chemical Reactions.jpg" alt="Chemical Reactions">
+                            <div class="resource-description">
+                                <h3>Chemical Reactions</h3>
+                                <span>Understand the fundamentals of chemical reactions and equations.</span>
+                                <a href="https://example.com/chemistry2" target="_blank">Visit Resource</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <script>
+        function filterResources() {
+            var selectedSubject = document.getElementById('subject-filter').value;
+            var allResources = document.querySelectorAll('.resource-group');
+
+            allResources.forEach(function(resourceGroup) {
+                if (selectedSubject === 'all' || resourceGroup.getAttribute('id') === selectedSubject) {
+                    resourceGroup.style.display = 'block';
+                } else {
+                    resourceGroup.style.display = 'none';
+                }
+            });
+        }
+
+        window.onload = filterResources;
+    </script>
+
+</body>
+</html>
