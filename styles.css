@@ -36,6 +36,17 @@ nav > a {
     width: 100%;
 }
 
+#about-nav {
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+}
+
+#about-img {
+    display: flex; 
+    flex-direction: column;
+}
+
 .primary-color {
     background-color: #5E548E;
 }
