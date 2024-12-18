@@ -183,6 +183,10 @@ nav > a {
     background-color: white;
 }
 
+.resource * {
+    margin-bottom: 5px;
+}
+
 .resource img {
     width: 100px;
     height: 100px;
@@ -375,6 +379,21 @@ nav > a {
 
     .form_page_rel {
         overflow: scroll;
+    }
+
+    .resources {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .resource {
+        max-width: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
     }
 
     #host-div {
