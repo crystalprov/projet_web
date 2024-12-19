@@ -48,6 +48,23 @@ nav > a:hover {
     border: solid 1px rgba(255, 255, 255, 0.647);
 }
 
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}
+
+.footer a {
+    color: #ff00ee;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
 .about-containers {
     width: 400px; 
     box-shadow: 2px 2px 2px 2px; 
