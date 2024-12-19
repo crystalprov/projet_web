@@ -5,6 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resources</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        function filterResources() {
+            var selectedSubject = document.getElementById('subject-filter').value;
+            var allResources = document.querySelectorAll('.resource-group');
+
+            allResources.forEach(function(resourceGroup) {
+                if (selectedSubject === 'all' || resourceGroup.getAttribute('id') === selectedSubject) {
+                    resourceGroup.style.display = 'block';
+                } else {
+                    resourceGroup.style.display = 'none';
+                }
+            });
+        }
+
+        window.onload = filterResources;
+    </script>
 </head>
 <body>
     <header class="secondary-color">
@@ -227,23 +243,5 @@
         </main>
 
     </div>
-
-    <script>
-        function filterResources() {
-            var selectedSubject = document.getElementById('subject-filter').value;
-            var allResources = document.querySelectorAll('.resource-group');
-
-            allResources.forEach(function(resourceGroup) {
-                if (selectedSubject === 'all' || resourceGroup.getAttribute('id') === selectedSubject) {
-                    resourceGroup.style.display = 'block';
-                } else {
-                    resourceGroup.style.display = 'none';
-                }
-            });
-        }
-
-        window.onload = filterResources;
-    </script>
-
 </body>
 </html>
