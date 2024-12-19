@@ -33,7 +33,13 @@ nav > a {
     color: #F0F0F3;
     padding: 10px;
     align-items: center;
+    text-align: center;
     width: 100%;
+}
+
+nav > a:hover {
+    background-color: #f76c6c6a;
+    border: solid 1px rgba(255, 255, 255, 0.647);
 }
 
 .about-containers {
@@ -266,10 +272,14 @@ nav > a {
     word-wrap: break-word;
 }
 
-#about-nav {
+.about-nav {
     display: flex; 
     flex-direction: row;
     justify-content: center;
+}
+
+.about-nav > a {
+    text-align: center;
 }
 
 #about-img {
@@ -552,6 +562,10 @@ nav > a {
         flex-direction: column;
     }
 
+    nav > a {
+        text-align: left;
+    }
+
     .resource {
         max-width: 400px;
     }
@@ -559,6 +573,12 @@ nav > a {
     .resource:hover {
         scale: 1.1;
         margin: 10px;
+    }
+    
+    .about-containers:hover {
+        transform: scale(1.3);
+        background-color: #9F86C0;
+        color: #F0F0F3;
     }
 
     #meeting-main {
@@ -596,12 +616,6 @@ nav > a {
     #about-img img {
         height: 550px;
         width: 60%;
-    }
-
-    .about-containers:hover {
-        transform: scale(1.3);
-        background-color: #9F86C0;
-        color: #F0F0F3;
     }
 
     #h2-about {
