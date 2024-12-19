@@ -5,6 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        let fName = document.getElementById("fname");
+        let lName = document.getElementById("lname");
+        let email = document.getElementById("email");
+        let button = document.getElementById("button-form");
+        let form = document.getElementById("form");
+
+        form.addEventListener("submit", (event) => {
+            event.preventDefault();    
+
+            let errors = [];
+
+            if (fName.value.trim() === "") {
+                errors.push("Please fill out the 'First name' field.");
+            }
+            if (lName.value.trim() === "") {
+                errors.push("Please fill out the 'Last name' field.");
+            }
+            if (email.value.trim() === "") {
+                errors.push("Please fill out the 'Email' field.");
+            }
+
+            if (errors.length > 0) {
+                alert(errors.join("\n")); 
+
+            } else {
+                alert("Thank you " + fName.value + "! We will reach out to you soon.");
+                form.reset(); 
+
+            }});
+    </script>
 </head>
 <body>
     <header class="secondary-color">
@@ -122,41 +153,5 @@
 
         </main>
     </div>
-
-    <script>
-
-        // Validation form
-
-        let fName = document.getElementById("fname");
-        let lName = document.getElementById("lname");
-        let email = document.getElementById("email");
-        let button = document.getElementById("button-form");
-        let form = document.getElementById("form");
-
-        form.addEventListener("submit", (event) => {
-            event.preventDefault();    
-
-            let errors = [];
-
-            if (fName.value.trim() === "") {
-                errors.push("Please fill out the 'First name' field.");
-            }
-            if (lName.value.trim() === "") {
-                errors.push("Please fill out the 'Last name' field.");
-            }
-            if (email.value.trim() === "") {
-                errors.push("Please fill out the 'Email' field.");
-            }
-
-            if (errors.length > 0) {
-                alert(errors.join("\n")); 
-
-            } else {
-                alert("Thank you " + fName.value + "! We will reach out to you soon.");
-                form.reset(); 
-
-            }});
-
-    </script>
 </body>
 </html>
