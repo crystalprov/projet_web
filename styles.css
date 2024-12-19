@@ -16,11 +16,17 @@ header {
     align-items: center;  
     height: 100px; 
     font-size: 36px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 2;
 }
 
 nav {
     display: flex;
     flex-direction: column;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 1;
 }
 
 main {
@@ -366,6 +372,9 @@ nav > a:hover {
     position: relative;
     display: flex;
     justify-content: center;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 1;
 }
 
 #host-div {
@@ -422,11 +431,11 @@ nav > a:hover {
 }
 
 #meeting-description-div td.available {
-    background-color: #c8e6c9; /* Light green for availability */
+    background-color: #c8e6c9; 
 }
 
 #meeting-description-div td.unavailable {
-    background-color: #ffcdd2; /* Light red for unavailability */
+    background-color: #ffcdd2;
 }
 
 #form-div {
@@ -560,10 +569,17 @@ nav > a:hover {
 @media (min-width: 1100px) {
     nav {
         flex-direction: column;
+        box-shadow: 4px 0 4px rgba(0, 0, 0, 0.5);
+        position: relative;
+        z-index: 1;
     }
 
     nav > a {
         text-align: left;
+    }
+
+    .about-nav {
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
     }
 
     .resource {
